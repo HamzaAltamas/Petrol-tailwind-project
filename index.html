@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
-    <link rel="icon" href="images/car backside.png" />
+    <link rel="icon" href="car backside.png" />
     <base href="images/" />
     <title>Petrol</title>
   </head>
@@ -19,7 +19,9 @@
     <!-- ==============================
         Header Start
     =================================== -->
-    <header class="bg-black py-4 w-full border-b-[4px] border-yellow">
+    <header
+      class="bg-black py-4 w-full border-b-[4px] border-yellow fixed z-20"
+    >
       <div class="container mx-auto flex">
         <div class="w-2/4 text-white flex">
           <div
@@ -61,7 +63,7 @@
     <!-- ==============================
         Navbar Start
     =================================== -->
-    <nav class="bg-red py-[15px] w-full flex">
+    <nav class="bg-red py-[15px] w-full flex fixed z-20 top-[64px]">
       <div class="container mx-auto flex">
         <div class="w-[20%]">
           <a href="#"> <img src="logo.webp" alt="" /></a>
@@ -97,5 +99,56 @@
     <!-- ==============================
         Navbar End
     =================================== -->
+    <!-- ==============================
+        Banner Start
+    =================================== -->
+    <section
+      id="banner"
+      class="bg-banner pb-[150px] pt-[270px] bg-cover bg-center bg-no-repeat relative"
+    >
+      <i
+        class="fa-solid fa-arrow-left absolute top-[50%] left-[5px] text-white translate-y-1/2 z-10"
+      ></i>
+      <i
+        class="fa-solid fa-arrow-right absolute top-[50%] right-[5px] text-white translate-y-1/2 z-10"
+      ></i>
+      <div class="w-full h-full absolute top-0 bg-bannerOverlay"></div>
+      <div class="container mx-auto text-white z-10 relative">
+        <h1 class="font-semibold text-[40px] w-[550px]">
+          We exist since 1975 on the oil and gas industry.
+        </h1>
+        <button
+          class="bg-red hover:bg-yellow hover:border-yellow hover:text-red duration-[0.5s] border-red border-2 py-[8px] px-[20px] text-white text font-semibold mt-5"
+        >
+          <span>CONTACT</span>
+        </button>
+      </div>
+    </section>
+    <!-- ==============================
+        Banner End
+    =================================== -->
+    <!-- ===================================
+      The biggest supplier on the country start
+    ========================================== -->
+    <section id="supplier" class="py-[50px]">
+      <div class="container mx-auto flex">
+        <div class="text-black w-[40%]">
+          <h2 class="text-[48px] font-bold w-[300px]">
+            The biggest supplier on the country
+          </h2>
+        </div>
+        <div class="flex justify-center items-center">
+          <p class="text-paraColor w-[600px]">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================
+      The biggest supplier on the country end
+    ========================================== -->
   </body>
 </html>
