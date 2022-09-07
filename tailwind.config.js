@@ -16,6 +16,9 @@ tailwind.config = {
       },
       backgroundImage: {
         banner: "url('BannerBg.png')",
+        serviceOne: "url('redpipe.png')",
+        serviceTwo: "url('welding.png')",
+        serviceThree: "url('refill.png')",
       },
     },
   },
