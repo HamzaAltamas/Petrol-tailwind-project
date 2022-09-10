@@ -20,26 +20,30 @@
         Header Start
     =================================== -->
     <header
-      class="bg-black py-4 w-full border-b-[4px] border-yellow fixed z-20"
+      class="bg-black md:py-4 py-[5px] w-full border-b-[4px] border-yellow fixed z-20 md:text-[16px] text-[10px]"
     >
-      <div class="container mx-auto flex">
-        <div class="w-2/4 text-white flex">
+      <div class="container mx-auto md:flex">
+        <div class="md:w-2/4 text-white md:flex">
           <div
-            class="w-2/4 text-white flex align-center relative after:absolute after:content['*'] after:w-[2px] after:h-full after:bg-white after:right-[43px]"
+            class="w-full md:w-2/4 text-white flex justify-center md:justify-start align-center relative md:after:absolute md:after:content['*'] md:after:w-[2px] md:after:h-full md:after:bg-white md:after:right-[43px]"
           >
             <a href="mailto:mail@yourcompany.com"
               ><i class="fa-regular fa-envelope text-lg"></i>
               <span class="ml-[5px]">mail@yourcompany.com</span></a
             >
           </div>
-          <div class="w-2/4 text-white flex align-center">
+          <div
+            class="w-full md:w-2/4 text-white flex align-center justify-center md:justify-start"
+          >
             <a href="tell:+896 120 5889" class="mt-[4px]"
               ><i class="fa-solid fa-phone"></i>
               <span class="ml-[5px]">+896 120 5889 (Toll free) </span></a
             >
           </div>
         </div>
-        <div class="w-2/4 text-white flex justify-end">
+        <div
+          class="md:w-2/4 text-white flex justify-center md:justify-end mt-[3px] md:mt-0"
+        >
           <ul class="flex text-white gap-[20px]">
             <li>
               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -63,36 +67,47 @@
     <!-- ==============================
         Navbar Start
     =================================== -->
-    <nav class="bg-red py-[15px] w-full flex fixed z-20 top-[64px]">
-      <div class="container mx-auto flex">
-        <div class="w-[20%]">
+    <nav
+      class="bg-red py-[15px] w-full flex fixed z-20 top-[79px] md:top-[64px]"
+    >
+      <div
+        class="container mx-auto flex justify-between px-[10px] md:px-0 items-center"
+      >
+        <div class="md:w-[20%] w-[50%]">
           <a href=""><img src="Logo.webp" alt="" /></a>
         </div>
-        <div class="w-[60%] flex justify-end">
-          <ul class="flex text-white gap-[30px] items-center">
-            <li class="hover:text-yellow duration-[0.5s]">
-              <a href="#">Home</a>
-            </li>
-            <li class="hover:text-yellow duration-[0.5s]">
-              <a href="#">About</a>
-            </li>
-            <li class="hover:text-yellow duration-[0.5s]">
-              <a href="#">Services</a>
-            </li>
-            <li class="hover:text-yellow duration-[0.5s]">
-              <a href="#">Gallery</a>
-            </li>
-            <li class="hover:text-yellow duration-[0.5s]">
-              <a href="#">Blog</a>
-            </li>
-          </ul>
+        <div class="w-[15px] md:hidden">
+          <div class="w-full h-[3px] bg-white mb-[2px]"></div>
+          <div class="w-full h-[3px] bg-white mb-[2px]"></div>
+          <div class="w-full h-[3px] bg-white mb-[2px]"></div>
         </div>
-        <div class="w-[20%] flex items-center justify-end">
-          <button
-            class="hover:bg-yellow hover:border-yellow hover:text-red duration-[0.5s] border-white border-2 py-[8px] px-[20px] text-white text font-semibold"
-          >
-            <span>CONTACT</span>
-          </button>
+        <div class="w-[80%] md:flex md:justify-end hidden md:block">
+          <div class="w-[60%] flex justify-end">
+            <ul class="flex text-white gap-[30px] items-center">
+              <li class="hover:text-yellow duration-[0.5s]">
+                <a href="#">Home</a>
+              </li>
+              <li class="hover:text-yellow duration-[0.5s]">
+                <a href="#">About</a>
+              </li>
+              <li class="hover:text-yellow duration-[0.5s]">
+                <a href="#">Services</a>
+              </li>
+              <li class="hover:text-yellow duration-[0.5s]">
+                <a href="#">Gallery</a>
+              </li>
+              <li class="hover:text-yellow duration-[0.5s]">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[20%] flex items-center justify-end">
+            <button
+              class="hover:bg-yellow hover:border-yellow hover:text-red duration-[0.5s] border-white border-2 py-[8px] px-[20px] text-white text font-semibold"
+            >
+              <span>CONTACT</span>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
